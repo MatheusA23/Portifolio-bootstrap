@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Início</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+                <li><a href="{{ url_for('projects') }}">Meus Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Matheus Silva</h1>
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='Matheusfoto.jpg') }}" alt="Perfil" class="profile-img">
+            <div class="profile-text">
+                <p>Atualmente, sou estudante de Ciência da Computação, mergulhado no fascinante universo da tecnologia e inovação.</p>
+                <p>Com um entusiasmo constante por programação e desenvolvimento de software, busco constantemente aprender e enfrentar novos desafios. Valorizo muito a colaboração e a criatividade na resolução de problemas, e estou comprometido em utilizar minhas habilidades para desenvolver soluções tecnológicas impactantes e inovadoras.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Matheus Silva. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
